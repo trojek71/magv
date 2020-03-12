@@ -1,19 +1,17 @@
 {
   "name": "magv-boilerplate",
   "version": "1.0.0",
-  "description": "Vue.js, Node.js, GraphQL, Apoll-Server, and MongoDB boilerplate",
-  "main": "build/index.js",
-  "repository": "https://github.com/LazyFatArrow/vue-apollo-mongo-boilerplate",
-  "author": "Amenallah Hsoumi <amenallah.hsoumi@gmail.com>",
-  "license": "MIT",
   "private": false,
+  "description": "Vue.js, Node.js, GraphQL, Apoll-Server, and MongoDB boilerplate",
+  "author": "Amenallah Hsoumi <amenallah.hsoumi@gmail.com>",
   "scripts": {
-    "web:dev": "vue-cli-service serve",
-    "web:build": "vue-cli-service build",
-    "server:dev": "nodemon",
     "server:build": "cross-env BABEL_ENV='node' babel ./server --out-dir ./build --copy-files",
-    "start": "node build/index"
+    "server:dev": "nodemon",
+    "start": "vue-cli-service serve --open",
+    "web:build": "vue-cli-service build",
+    "web:dev": "vue-cli-service serve"
   },
+  "main": "build/index.js",
   "dependencies": {
     "apollo-server": "^2.3.1",
     "apollo-utilities": "^1.1.2",
@@ -23,6 +21,7 @@
     "dotenv-expand": "^4.2.0",
     "graphql": "^14.0.2",
     "graphql-tag": "^2.9.0",
+    "mdbvue": "6.5.0",
     "merge-graphql-schemas": "^1.5.8",
     "mongoose": "^5.4.3",
     "vue": "^2.6.11",
@@ -39,8 +38,13 @@
     "@vue/cli-plugin-babel": "^3.0.1",
     "@vue/cli-service": "^3.0.1",
     "cross-env": "^5.2.0",
+    "node-sass": "^4.9.0",
     "nodemon": "^1.18.9",
+    "sass-loader": "^8.0.0",
     "vue-cli-plugin-apollo": "^0.19.1",
+    "vue-cli-plugin-mdb": "~2.0.4",
     "vue-template-compiler": "2.6.11"
-  }
+  },
+  "license": "MIT",
+  "repository": "https://github.com/LazyFatArrow/vue-apollo-mongo-boilerplate"
 }
