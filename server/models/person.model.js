@@ -9,6 +9,11 @@ const PersonSchema = new mongoose.Schema({
     type:String,
     unique: true
   },
+  address:{
+    city: {type: String},
+    street:{type: String}
+
+  },
 })
 
 export default mongoose.model('person', PersonSchema)

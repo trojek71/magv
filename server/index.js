@@ -27,4 +27,5 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true })
   .then(({ url, subscriptionsUrl }) => {
     console.log(`🚀 Server ready at ${url}`);
     console.log(`🚀 Subscriptions ready at ${subscriptionsUrl}`);
-  })
+  });
+  mongoose.set('useCreateIndex', true);

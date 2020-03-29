@@ -1,5 +1,16 @@
+
+input inputAddr{
+  city:String
+  street:String
+}
+type Addr{
+  city:String
+  street:String
+}
 type Person {
   id: ID!
   name: String
   email:String
+  address: Addr
+
 }
