@@ -1,4 +1,4 @@
 type Mutation {
-  createPerson(id:ID!,name: String!, email:String!, address:inputAddr): Person
+  createPerson(id:ID!,name: String, email:String, address:inputAddr): Person
   updatePerson(id:ID,name:String,email:String, address:inputAddr):Person
 }
