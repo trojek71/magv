@@ -8,7 +8,7 @@ type Addr{
   street:String
 }
 type Person {
-  id: ID!
+  id: ID
   name: String
   email:String
   address: Addr

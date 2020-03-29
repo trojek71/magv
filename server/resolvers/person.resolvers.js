@@ -15,6 +15,15 @@ export default {
       })
 
       return person
+    },
+    updatePerson: async (parent, args) => {
+      const person = await PersonApi.updateOne(args)
+
+      pubsub.publish('personUpdated', {
+        personUpdated: person
+      })
+
+      return person
     }
   },
 
