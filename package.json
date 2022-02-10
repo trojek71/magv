@@ -38,7 +38,7 @@
     "@vue/cli-plugin-babel": "^3.0.1",
     "@vue/cli-service": "^3.0.1",
     "cross-env": "^5.2.0",
-    "node-sass": "^4.9.0",
+    "node-sass": "^7.0.0",
     "nodemon": "^1.18.9",
     "sass-loader": "^8.0.0",
     "vue-cli-plugin-apollo": "^0.19.1",
